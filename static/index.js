@@ -23,9 +23,14 @@ const quotes = [
     "Let’s just clam down shell we.",
     "Holy shrimp! This scampi happening.",
     "The new squid on the block.",
-    "I’m so angry I could krill someone.",
+    "This is sardine to get ridiculous.",
+    "It's krill or be krilled.",
+    "You've got to be squidding me.",
+    "Squid it already, will ya!",
+    "Oh bouy, these are starting to get a little finicky.",
+    "I'm sorry, I can't kelp it!",
     "Too many fish puns. We should scale back."
-]
+];
 document.getElementById("quote").innerHTML = quotes[randomNumber(0, quotes.length)];
 
 // Preform a parallax effect on etch element, use multiplication as the offset.
