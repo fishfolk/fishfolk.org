@@ -2,6 +2,17 @@
 const fg3 = document.getElementById("fg3");
 const fg2 = document.getElementById("fg2");
 const fg1 = document.getElementById("fg1");
+const fish1 = document.getElementById("fish1");
+const fish2 = document.getElementById("fish2");
+
+// Randomize fish selection
+const fish = ["catty", "fishy", "lionfishy", "orcy", "pescy", "sharky"];
+console.log(fish.length);
+const random1 = Math.floor(Math.random() * fish.length);
+const random2 = Math.floor(Math.random() * (fish.length - 1));
+console.log(random1, random2);
+fish1.style.backgroundImage = `url(assets/fish/${fish.splice(random1, 1)[0]}.png)`;
+fish2.style.backgroundImage = `url(assets/fish/${fish.splice(random2, 1)[0]}.png)`;
 
 // Particle container.
 const particle_count = 30;
@@ -12,11 +23,11 @@ let particles = [];
 
 // Generates a serving of fish puns.
 const quotes = [
-    "I’m hooked!", 
-    "Seems a bit fishy to me.", 
-    "I’d make him walk the plankton for that.", 
-    "Not bad, cod be better…", 
-    "It’s a great oppor-tuna-ty!", 
+    "I’m hooked!",
+    "Seems a bit fishy to me.",
+    "I’d make him walk the plankton for that.",
+    "Not bad, cod be better…",
+    "It’s a great oppor-tuna-ty!",
     "We whaley need to stop now!",
     "Well, it’s oh-fish-ial.",
     "Keep your friends close and your anemones closer.",
@@ -34,7 +45,7 @@ const quotes = [
 document.getElementById("quote").innerHTML = quotes[randomNumber(0, quotes.length)];
 
 // Preform a parallax effect on etch element, use multiplication as the offset.
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     let y = window.scrollY;
     fg1.style.top = (y * 0.6) + 'px';
     fg2.style.top = (y * 0.5) + 'px';
@@ -42,7 +53,7 @@ window.addEventListener('scroll', function() {
 })
 
 // If the browser is resized then handle the canvas
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
     particle_box.height = window.innerHeight;
     particle_box.width = window.innerWidth;
     context.imageSmoothingEnabled = false;
