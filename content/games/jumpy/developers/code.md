@@ -1,5 +1,8 @@
 ---
-title: Contributing Code to Fish Fight
+title: Contributing Code
+template: docs/page.html
+extra:
+    toc: true
 ---
 
 Proposing code changes has 3 main steps:
@@ -8,7 +11,7 @@ Proposing code changes has 3 main steps:
 2. Pick an issue to work on
 3. Write code and submitting for review
 
-## 1. Setting up your development environment
+## Setting up your development environment
 
 ### Before starting
 
@@ -46,7 +49,7 @@ This process should take about a minute or two depending on your machine. You ca
 
 `cargo run`
 
-## 2. Finding a good first issue
+## Finding a good first issue
 
 Now that you can build and run Fish Fight source code, let's find something to work on!
 We recommend all newcomers start with our [Development Tracks](https://github.com/fishfolk/jumpy/issues/124).
@@ -57,7 +60,7 @@ Additionally, if there's a track or issue you're particularly interested in, but
 reach out to the [Fish Fight Discord community](https://discord.gg/4smxjcheE5) with your questions
 and someone should reach out shortly!
 
-## 3. Write code and submitting for review
+## Write code and submitting for review
 
 In general, Fish Fight uses a branch-based workflow (or [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)) for submitting changes to the project.
 

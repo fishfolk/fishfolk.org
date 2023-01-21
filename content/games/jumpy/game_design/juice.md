@@ -1,5 +1,6 @@
 ---
 title: Juice and Feel
+template: docs/page.html
 ---
 
 Juice, or game feel, is the science and art of making pushing a button viscerally satisfying. Well, more precisely it's about giving feedback to confirm the player's actions. For games where flow and feeling matter, juice is the thing that makes the player understand your game without reading dials and processing numbers. Juice gives a game life and soul that makes the player feel like a part of the world. Juice is what makes a game feel fun without actually making any mechanical difference. And juice might just be what makes or breaks your game.

@@ -1,5 +1,6 @@
 ---
 title: Legacy Documentation
+template: docs/page.html
 ---
 After the Bevy rewrite, the Jumpy book was revised, but not all of the old pages have been migrated
 to the new revision.

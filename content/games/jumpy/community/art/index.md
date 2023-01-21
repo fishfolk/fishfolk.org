@@ -1,8 +1,11 @@
 ---
 title: Contributing Art
+template: docs/page.html
+extra:
+    toc: true
 ---
 
-![art_section_header](./contributing_art/art_section_header.png)
+![art_section_header](./art_section_header.png)
 
 This guide will show you the steps to draw art using the Fish Fight style. Following these steps will help your custom art fit better in the Fish Fight world. For this example, we will focus on creating a cannon weapon, but these principles can be applied to other assets as well. If you are completely new to pixel art, make sure to take a look at the [Additional Resources](#additional-resources) section first.
 
@@ -10,13 +13,13 @@ This guide will show you the steps to draw art using the Fish Fight style. Follo
 
 Before you start drawing, you need to have a clear idea of what it is you are creating. We recommend finding a few reference images that you can look at while creating your art. Even the best artists do this. Drawing something completely from memory tends to not give the best results. Below are some reference images we found for cannons.
 
-![cannon_references](./contributing_art/cannon_references.PNG)
+![cannon_references](./cannon_references.png)
 
 ## Outline
 
 Now that you have some references, you can start drawing your art! To start off, draw an outline of the object's prominent features. Keep outlining more details until it is recognizable as the object you are creating. Below is the outline for the cannon weapon:
 
-![cannon_outlines](./contributing_art/cannon_outlines.png)
+![cannon_outlines](./cannon_outlines.png)
 
 Here are the guidelines we use for outlining:
 
@@ -31,7 +34,7 @@ Here are the guidelines we use for outlining:
 
 After you've finished outlining your object you are ready to begin coloring. Below is the cannon weapon after being colored:
 
-![cannon_colors](./contributing_art/cannon_colors.png)
+![cannon_colors](./cannon_colors.png)
 
 Here are the guidelines we use for applying color:
 
@@ -43,7 +46,7 @@ Here are the guidelines we use for applying color:
 
 After coloring, shadows and details can be added to the object, but try to keep it clean and recognizable. Below is the cannon after adding shadows and details.
 
-![cannon_details](./contributing_art/cannon_details.png)
+![cannon_details](./cannon_details.png)
 
 Here are the guidelines we use for adding shadows and details:
 
@@ -55,7 +58,7 @@ Here are the guidelines we use for adding shadows and details:
 
 Below is the full process for creating the cannon art:
 
-![cannon_art](./contributing_art/cannon_art.gif)
+![cannon_art](./cannon_art.gif)
 
 ### Additional Resources
 

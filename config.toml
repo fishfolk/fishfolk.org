@@ -97,15 +97,9 @@ site_links_search_box = true
 
 # Menu items
 [[extra.menu.main]]
-name    = "Docs"
-section = "docs"
-url     = "/"
-weight  = 10
-
-[[extra.menu.main]]
-name    = "Jumpy"
-section = "jumpy"
-url     = "/jumpy/"
+name    = "Games"
+section = "games"
+url     = "/games"
 weight  = 10
 
 # [[extra.menu.social]]
