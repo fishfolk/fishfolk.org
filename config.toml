@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url    = "/"
 description = "Games with fish folk. Child of Spicy Lobster Games."
-title       = "FishFolk"
+title       = "Fish Folk"
 
 theme = "fishfolk"
 
@@ -54,7 +54,7 @@ language_code = "en-US"
 theme_color = "#fff"
 
 # More about site's title
-title_addition  = "FishFolk"
+title_addition  = "Fish Folk"
 title_separator = "|"        # set as |, -, _, etc
 
 # Set date format in blog publish metadata

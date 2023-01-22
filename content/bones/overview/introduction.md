@@ -7,7 +7,7 @@ extra:
     lead: A work-in-progress, opinionated game meta-engine built on <a href="https://bevyengine.org">Bevy</a>.
 ---
 
-Bones is under development for use in the [Jumpy] game, and possibly other FishFolk games.
+Bones is under development for use in the [Jumpy] game, and possibly other Fish Folk games.
 
 [jumpy]: https://github.com/fishfolk/jumpy
 

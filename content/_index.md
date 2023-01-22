@@ -1,3 +1,3 @@
 ---
-title: Game With FishFolk
+title: Game With Fish Folk
 ---
