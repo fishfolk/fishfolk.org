@@ -103,10 +103,16 @@ url     = "/games"
 weight  = 10
 
 [[extra.menu.main]]
+name = "Bones"
+section = "bones"
+url = "/bones/overview/introduction"
+weight = 30
+
+[[extra.menu.main]]
 name = "Blog"
 section = "blog"
 url = "/blog/"
-weight = 20
+weight = 30
 
 
 # [[extra.menu.social]]
