@@ -45,7 +45,7 @@ It's worth noting that Bones ECS also doesn't have multi-threading. Multi-thread
 
 ### Previous Attempt: `bevy_mod_js_scripting`
 
-Scripting in Bevy is quite difficult. One of the most flexible solutions, which we have made extensive contributions to is [`bevy_mod_js_scripting`].
+Scripting in Bevy is quite difficult. One of the most flexible solutions (which we have made extensive contributions to) is [`bevy_mod_js_scripting`]. It  powers the [current scripting system of Punchy](https://github.com/fishfolk/punchy/wiki/Scripting).
 
 It leverages Bevy's reflect functionality, and allows creating bindings into the JS scripting environment to perform arbitrary actions on the Bevy world through JS. When it's complete it will probably be one of the most usable and powerful scripting interfaces to Bevy, but it is still tricky to figure out how to make JS interact with the Bevy world, and when there isn't already a way to do something you need, you have to manually craft new bindings Rust functions on the Bevy world. This is not the fault of `bevy_mod_js_scripting`. It is simply a fact that Bevy's API is difficult to create a complete scripting API for.
 
