@@ -7,7 +7,7 @@ extra:
     lead: A work-in-progress, opinionated framework built on <a href="https://bevyengine.org">Bevy</a>.
 ---
 
-Bones is a funder development for use in the [Jumpy] game, and possibly other Fish Folk games.
+Bones is developed for use in [Jumpy]. It will probably be incorporated by all other Fish Folk games once it has matured.
 
 [jumpy]: https://github.com/fishfolk/jumpy
 
