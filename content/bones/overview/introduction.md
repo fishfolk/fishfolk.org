@@ -27,6 +27,10 @@ Bones is designed around a simple, custom Entity Component System ( ECS ), desig
 
 Determinism and Snapshot/Restore are also key features for getting excellent **network play** with the rollback networking model, while requiring no changes to the core game loop implementation.
 
+#### Does Bones Replace Bevy?
+
+No; Bones sits on top of Bevy for rendering, audio playback, and other system-related things. The Bones ECS world is where the core game logic resides. Bevy and the Bevy ECS sit outside of that, reading from the Bones ECS world, what core game wants to render, what sound effects it wants to play, etc., and displaying that to the user.
+
 ### Game Core
 
 Using `bones_lib`, which includes `bones_ecs` and other useful utilities, you write your "game core".
