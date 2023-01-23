@@ -137,8 +137,6 @@ Now that we've defined our components and our systems, it's time to put them tog
 The first step is to create a `World` to store our components and resources in:
 
 ```rust
-# extern crate bones_ecs;
-# use bones_ecs::prelude::*;
 let mut world = World::new();
 ```
 
