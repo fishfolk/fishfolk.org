@@ -51,4 +51,4 @@ You are also free to create your own rendering components that you synchronize w
 
 ### Bones App ( Future )
 
-As we get a feel for how things fit together with the use of Bones in [Jumpy], we hope to be able to create a standardized game runner around Bones game cores, i.e. a kind of meta-engine. This would allow the Bones app to handle common things like localization, asset loading, input mapping, settings menu, networking, etc., allowing you to focus on writing what makes your game unique. 
+As we get a feel for how things fit together with the use of Bones in [Jumpy], we hope to be able to create a standardized game runner around Bones game cores, i.e. a kind of meta-engine. This would allow the Bones app to handle common things like localization, asset loading, input mapping, settings menu, networking, etc., allowing gamedevs to focus on unique game mechanics.
