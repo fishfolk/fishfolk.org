@@ -4,12 +4,16 @@ template: docs/page.html
 
 extra:
     toc: true
-    lead: A work-in-progress, opinionated game meta-engine built on <a href="https://bevyengine.org">Bevy</a>.
+    lead: A work-in-progress, opinionated framework built on <a href="https://bevyengine.org">Bevy</a>.
 ---
 
-Bones is under development for use in the [Jumpy] game, and possibly other Fish Folk games.
+Bones is a funder development for use in the [Jumpy] game, and possibly other Fish Folk games.
 
 [jumpy]: https://github.com/fishfolk/jumpy
+
+Prior discussion:
+- [WASM For Core Game Loop & Mods](https://github.com/fishfolk/jumpy/discussions/489)
+- [Micro ECS For Core Game Logic](https://github.com/fishfolk/jumpy/discussions/510)
 
 ## Overview
 
@@ -43,4 +47,4 @@ You are also free to create your own rendering components that you synchronize w
 
 ### Bones App ( Future )
 
-As we get a feel for how things fit together with the use of Bones in [Jumpy], we hope to be able to create a standardized game runner around Bones game cores. This would allow the Bones app to handle common things like localization, asset loading, input mapping, settings menu, networking, etc., allowing you to focus on writing what makes your game unique.
+As we get a feel for how things fit together with the use of Bones in [Jumpy], we hope to be able to create a standardized game runner around Bones game cores, i.e. a kind of meta-engine. This would allow the Bones app to handle common things like localization, asset loading, input mapping, settings menu, networking, etc., allowing you to focus on writing what makes your game unique. 
