@@ -35,7 +35,7 @@ Let's start with making some components. We'll need a `Pos` component and a `Vel
 #[ulid = "01GPYNA7R38W826BG79QG0X590"]
 pub struct Pos {
     pub x: f32,
-    pub y: f32,index
+    pub y: f32,
 }
 
 /// Our velocity component.
