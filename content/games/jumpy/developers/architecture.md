@@ -1,6 +1,7 @@
 ---
 title: Architecture
 template: docs/page.html
+weight: 20
 
 extra:
     external_link: https://fishfolk.github.io/jumpy/book/developers/rustdoc/jumpy/index.html

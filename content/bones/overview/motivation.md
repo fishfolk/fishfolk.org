@@ -1,6 +1,7 @@
 ---
 title: Motivation
 template: docs/page.html
+weight: 20
 
 extra:
     toc: true

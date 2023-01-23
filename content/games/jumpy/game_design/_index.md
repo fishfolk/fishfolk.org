@@ -1,4 +1,5 @@
 ---
 title: Game Design
-weight: 4
+weight: 50
+sort_by: weight
 ---

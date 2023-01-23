@@ -1,6 +1,7 @@
 ---
 title: Contributing Code
 template: docs/page.html
+weight: 10
 extra:
     toc: true
 ---

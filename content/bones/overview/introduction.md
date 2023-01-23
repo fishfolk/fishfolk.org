@@ -1,6 +1,7 @@
 ---
 title: Introduction
 template: docs/page.html
+weight: 10
 
 extra:
     toc: true
@@ -12,6 +13,7 @@ Bones is developed for use in [Jumpy]. It will probably be used by all other Fis
 [jumpy]: https://github.com/fishfolk/jumpy
 
 Prior discussion:
+
 - [WASM For Core Game Loop & Mods](https://github.com/fishfolk/jumpy/discussions/489)
 - [Micro ECS For Core Game Logic](https://github.com/fishfolk/jumpy/discussions/510)
 

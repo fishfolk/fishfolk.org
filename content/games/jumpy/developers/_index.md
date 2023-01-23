@@ -1,4 +1,5 @@
 ---
 title: Developers
-weight: 3
+weight: 30
+sort_by: weight
 ---
