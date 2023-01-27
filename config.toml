@@ -103,9 +103,9 @@ url     = "/games"
 weight  = 10
 
 [[extra.menu.main]]
-name = "Bones"
-section = "bones"
-url = "/bones/overview/introduction"
+name = "Development"
+section = "development"
+url = "/development/overview/introduction"
 weight = 30
 
 [[extra.menu.main]]
