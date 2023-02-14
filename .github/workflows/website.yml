@@ -29,6 +29,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
+      - name: Trust GitHub Directory
+        run: |
+          # See https://github.com/actions/checkout/issues/766
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
       - name: Build
         uses: shalzz/zola-deploy-action@v0.16.1
         env:
