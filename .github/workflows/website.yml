@@ -28,16 +28,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
+        with:
+          submodules: true
 
-      - name: Trust GitHub Directory
-        run: |
-          # See https://github.com/actions/checkout/issues/766
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.16
 
       - name: Build
-        uses: shalzz/zola-deploy-action@v0.16.1
-        env:
-          BUILD_ONLY: true
+        run: zola build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
