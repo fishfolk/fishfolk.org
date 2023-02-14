@@ -1,10 +1,12 @@
 ---
-title: Introduction
-template: docs/page.html
-weight: 10
+title: Jumpy
+description: A tactical 2D shooter.
+template: game_page.html
 
 extra:
-    toc: true
+  image: https://user-images.githubusercontent.com/24392180/151969075-399e9fea-e2de-4340-96a4-0a0e5b79c281.gif
+  github_link: https://github.com/fishfolk/jumpy
+  toc: true
 ---
 
 ![Fish Folk: Jumpy Preview](https://user-images.githubusercontent.com/24392180/151969075-399e9fea-e2de-4340-96a4-0a0e5b79c281.gif)
@@ -30,36 +32,13 @@ We recommend using the Chrome browser or other derivatives for the best performa
 - Smart-level creation tools
 - Tournaments & matchmaking built-in
 
-### Status
-
-The game is currently under reconstruction as it is being rewritten to use the [Bevy] game engine. There are now 4 stable maps and 4 items in the new version, and the game is nearly ready for another release.
-
-[Bevy]: https://bevyengine.org
-
 ## Community
 
 ### Contributing
 
 Anyone involved in the Fish Folk community must follow our [code of conduct](https://github.com/fishfolk/jumpy/blob/main/CODE_OF_CONDUCT.md).
 
-If you'd like to make something for Fish Folk, check out our [help-wanted](https://github.com/fishfolk/jumpy/labels/help%20wanted) issues or just ask us on [Discord](https://discord.gg/4smxjcheE5). We'll soon post an updated roadmap for the next month or two of work ahead.
-
-Before committing and opening a PR, please run the following commands and follow their instructions:
-
-1. `cargo clippy -- -W clippy::correctness -D warnings`
-2. `cargo fmt`
-
-### Learning Materials
-
-#### Rust
-
-- [Rusty Engine Tutorial](https://cleancut.github.io/rusty_engine/)
-- [Rust sokoban](https://sokoban.iolivia.me/)
-- <https://pragprog.com/titles/hwrust/hands-on-rust/>
-
-#### Bevy
-
-- [Unofficial Bevy Cheat Book](https://bevy-cheatbook.github.io/)
+If you'd like to make something for Fish Folk, check out our [help-wanted](https://github.com/fishfolk/jumpy/labels/help%20wanted) issues or just ask us on [Discord](https://discord.gg/4smxjcheE5).
 
 ## Download & play
 
@@ -77,15 +56,3 @@ Before committing and opening a PR, please run the following commands and follow
 ```sh
 pacman -S jumpy
 ```
-
-## Building
-
-1. Install Rust with [rustup.rs](https://rustup.rs/)
-2. Clone this repository: `git clone https://github.com/fishfolk/jumpy.git`
-3. `cd jumpy`
-4. `cargo run`
-
-## Credits
-
-- [Fish Folk: Jumpy Credits](./CREDITS.md)
-- Input Icons: [Kadith's Icons](https://kadith.itch.io/kadiths-free-icons) by Kadith

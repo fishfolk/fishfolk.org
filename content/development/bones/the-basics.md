@@ -1,7 +1,7 @@
 ---
 title: The Basics
 template: docs/page.html
-weight: 10
+weight: 30
 
 extra:
     toc: true
