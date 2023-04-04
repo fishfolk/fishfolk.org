@@ -1,6 +1,8 @@
 ---
 title: Spicy Lobster (Open Gamedev) Company
-description: Introducing Doks, a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default.
+description: >
+    Our Spicy Lobster studio venture is among the first of what we hope will become a common type of company,
+    designed first and foremost to Do Good by means of radical openness.
 template: blog/page.html
 date: 2022-02-22
 
