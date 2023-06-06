@@ -2,7 +2,7 @@
 title: Jumpy v0.6 Retrospective
 description: "A retrospective on the current architecture of Jumpy: what I learned, what I like, and what I'd like to improve in the future."
 template: blog/page.html
-date: 2022-04-03
+date: 2023-04-03
 
 taxonomies:
   authors:
