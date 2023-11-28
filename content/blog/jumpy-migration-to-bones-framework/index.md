@@ -16,15 +16,15 @@ Here we're going to go over what that means, and how it helps us.
 
 ## What is the Bones Framework?
 
-Bones Framework is our new **game engine**, built on the Bones ECS. Before now, Bones was mostly just an ECS,
-and some other related components, not it's own game engine. It was used to give Jumpy a deterministic game
-core that supported snapshot and restore. The latest refactor, though, change **a lot**.
+Bones Framework is our new top-layer **game engine**, built on the Bones ECS. Before now, Bones was mostly just an ECS,
+and some other related components, not its own game engine. It was used to give Jumpy a deterministic game
+core that supported snapshot and restore. The latest refactor, though, changes **a lot**.
 
 ### Asset System
 
 The thing that started this journey was the asset system. Before the refactor, Bones had a very clunky
 integration with Bevy's asset system that did _just enough_ to make it usable in Jumpy. It was not optimal
-and it was only meant to be temporary, until bones got it's own asset system.
+and it was only meant to be temporary, until bones got its own asset system.
 
 As I started working on the asset system, I was keeping in mind some important things that we wanted to
 support:
@@ -36,7 +36,7 @@ support:
 - **Convenient Metadata Assets:** Jumpy was already making heavy use of what we called metadata assets.
   These are inter-connected YAML files that make it easy to organize all of our game data, such as items,
   maps, player skins, etc. This pattern worked really well for making the game, but wasn't super convenient
-  to accomplish in Bevy, so we wanted to make sure that this worked super well out-of-the box in Bones.
+  to accomplish in Bevy, so we wanted to make sure that this worked well out-of-the box in Bones.
 - **Modding:** We wanted to be able to have mods create their _own_ kind of metadata assets, so that if a
   mod added a "clam" element, it could load the information for it from `.clam.yaml` files.
 
@@ -60,7 +60,7 @@ multiple crucial places:
 - **The Scripting System:** The schema tells us about the fields and types the data has so that scripts can
   read and write the data.
 
-The new schema system opened the door _all_ of these systems to cleanly interact with each-other, and it
+The new schema system opened the door to _all_ of these systems to cleanly interact with each-other, and it
 helped simplify some of the existing code in the Bones ECS, too.
 
 ### A Unified Framework
@@ -72,22 +72,22 @@ as well start checking off the next big ticket item that we needed to get done: 
 framework**.
 
 As it currently stood, Jumpy was made out of a strange combination of Bones and Bevy. There was `jumpy_core`,
-which was built on Bones and it's clunky Bevy asset integration, and then there was `jumpy` proper, which was
+which was built on Bones and its clunky Bevy asset integration, and then there was `jumpy` proper, which was
 a Bevy game that used `jumpy_core` for the gameplay section of the game.
 
 Inside `jumpy` you had to deal with the Bones ECS _and_ the Bevy ECS and dealing with that juggle was not
 super pretty. It was confusing, and it made it probably twice as confusing for contributors who, depending on
-what part of the game they want to contribute to, have to learn two different game engines that are eerily
+what part of the game they want to contribute to, would have to learn two different game engines that are eerily
 similar, but still very different.
 
-On top of all of this, there were tons of things that we were doing in Jumpy that we would rather be done in
-bones, so that other games could take advantage of it, and so that Jumpy could stay focused on what makes
+On top of all of this, there were tons of things that we were doing in Jumpy that we would rather be doing in
+Bones so that other games could take advantage of it, and so that Jumpy could stay focused on what makes
 Jumpy unique.
 
 This called for the Bones Framework, so that we could make Jumpy a Bones game, not a "Bones + lots of glue +
 Bevy" game.
 
-So, while we migrated to the new schema design, and made a new asset system, we _also_ started moving parts
+Therefore, while we migrated to the new schema design and made a new asset system, we _also_ started moving parts
 of Jumpy out of Jumpy and into Bones. We migrated things like the localization system and, importantly, our
 egui components. Migrating egui to Bones was a big win because, previously, there was no way to do UI from
 inside of the Bones world. All of the UI was trapped outside in the Bevy part of Jumpy. Now though, Bones
@@ -105,7 +105,7 @@ that Bevy is putting a great deal of effort into 3D rendering and other things t
 need. Being agnostic means that we take our project into our own hands a bit more, and allow us to focus
 on what is important to us when necessary.
 
-Also, by focusing rendering on _simple_ primtives, such as sprites, tilemaps, lines, and UI, we actually
+Also, by focusing rendering on _simple_ primitives, such as sprites, tilemaps, lines, and UI, we actually
 keep the game more scriptable and moddable, because we are not depending on the ability to do arbitrarily
 complex rendering directly from the ECS.
 
@@ -120,7 +120,7 @@ way to get started with Bones, and it uses Bevy to render your game, without you
 or do anything other than write your game for Bones.
 
 But then you see that there's a really cool [Bevy Magic Light 2D][bml2d] plugin that can make 2D
-lighting effects, and you want to use that in your bones game. Bones allows you to create your own
+lighting effects, and you want to use that in your Bones game. Bones allows you to create your own
 integration between it and the Bevy Magic Light plugin, so that you can control the lighting plugin using
 Bones ECS components.
 
@@ -132,7 +132,7 @@ actually a use-case [@Zac8668] is exploring with their [Astratomic] project! For
 is pretty much 100% custom. You're trying to put all your little sand particles on the screen in a way
 that is most efficient for that kind of game. Bevy isn't going to help you much at all with this
 kind of rendering, so in this case, a custom rendering backend for bones would be appropriate. This lets
-you get rendering efficiency while still hooking into Bones's modding features!
+you get rendering efficiency while still hooking into Bones' modding features!
 
 While Bones emphasises simplicity over the powerhouse rendering features that Bevy offers, it will still let
 you stretch your rendering powers where necessary, with a little extra work, and we'll also be trying to
@@ -185,7 +185,7 @@ Sessions also turned out useful where we used to use Bevy states to enable and d
 
 For instance, for the pause menu, we used to use game states to control whether or not the game systems
 should run and the game should play, or the pause menu systems should play. In this case, we can just
-use sessions. Once session for the game and one for the pause menu, and the pause menu can stop and start
+use sessions. One session for the game and one for the pause menu, and the pause menu can stop and start
 the game session based on interaction with the UI it renders.
 
 Since we added sessions, we haven't found a need for game states again, and the pattern feels nice so far.
@@ -205,14 +205,14 @@ Recently, deveopment was picked back up on the [Piccolo] project. Piccolo is a [
 written in Rust, and that was something we were interested in.
 
 In order to get seamless web support, it was important that whatever scripting language we integrated
-with Bones be implemented in pure Rust. While it's absolutely possible to us langauges not written
-in Rust on native platforms, using those languages the web becomes much more difficult. Lua is also
+with Bones be implemented in pure Rust. While it's absolutely possible to use langauges not written
+in Rust on native platforms, using those languages on the web becomes much more difficult. Lua is also
 a very common and popular language for game modding, so being able to support Lua was a big deal for us.
 
 While it's still under development, we are happy to be some of the first users of Piccolo and [@kyren],
 the author, has been very helpful to us as we've gotten started with it.
 
-Since all of the recent updates to Bones, the Bones ECS was, as far as I could tell, had all of the
+Since all of the recent updates to Bones, the Bones ECS, as far as I could tell, had all of the
 features it needed to be able to be accessed from a scripting language, and now it was time to test it
 out!
 
@@ -225,18 +225,18 @@ And that catches us up to the present day.
 
 ## Retrospect
 
-_Phew_, now feels like a good time to catch a breather. Despite taking longer than immagined, so
-far things have developed roughly according to plan. Since it's conception, Bones has been planned
+_Phew_, now feels like a good time to catch a breather. Despite taking longer than imagined, so
+far things have developed roughly according to plan. Since its conception, Bones has been planned
 to be fundamentally moddable and simple, and it seems that the vision is coming to fruiton.
 
 I'm going to be glad to get out of the massive refactor and be able to focus on smaller tasks again
-that can easily considered "done" and also show some more user-visible improvements. Working on
+that can be easily considered "done" and also show some more user-visible improvements. Working on
 huge refactors without a lot of visible value-add in the short term can be difficult, but I do
 think it was all worth it. I think our attempt at being pragmatic and pursuing our vision has payed off
 so far, and will continue to do so.
 
-While we're setting out to make a game, the Bones engine has grown from the, actual needs of that game,
-and it is a means to fulfilling the vision not just of Jumpy, but of the larger ecosystem of Open Source,
+While we're setting out to make a game, the Bones engine has grown from the actual needs of that game,
+and it is a means to fulfilling the vision not just of Jumpy, but of the larger ecosystem of open source,
 moddable games that we want to create.
 
 I'm personally not one of those developers that just wants to write everything themselves. In fact
@@ -248,7 +248,7 @@ I think that having complete control of our engine is going to be, and already h
 for us. We have been able to shape our developer and modder experience into exactly what we want
 it to be, and we are able to save ourselves development work by tailoring our engine to our needs.
 
-It's been a rather enlightening project to work on. This is the first time I've ever written a game
+It's been a rather enlightening project to work on. This is the first time I've ever written a complete game
 _or_ an engine. I've learned an enormous amount and I know there is still so much more to learn and
 I'm excited about that.
 
@@ -263,8 +263,8 @@ this is something that our new asset system was designed for, but we haven't "pl
 Jumpy yet. This shouldn't be too much work, and the value-add will be great, so I want to get
 this done as soon as possible.
 
-Documentation is the next big TODO, on my List. Jumpy has changed a lot, and Bones has 
-probably doubled in size at least. Good documentation will help other people contribute and make
+Documentation is the next big TODO on my List. Jumpy has changed a lot, and Bones has 
+probably doubled in size. Good documentation will help other people contribute and make
 Bones more ready for other people to use in their own games.
 
 Next I want to try to iron out some wrinkles in Jumpy's item system. We don't have events in Bones
